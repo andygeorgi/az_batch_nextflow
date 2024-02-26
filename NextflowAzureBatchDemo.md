@@ -184,8 +184,6 @@ On the newly provisioned Ubuntu VM, you can do some housekeeping such as updatin
 ssh -o StrictHostKeyChecking=no $vmNFHeadnodeUsername@$vmNFHeadnodeIP \
     'wget https://azcopyvnext.azureedge.net/releases/release-10.23.0-20240129/azcopy_linux_amd64_10.23.0.tar.gz; \
     tar -zxvf azcopy_linux_amd64_10.23.0.tar.gz; \
-    echo 'export AZURE_STORAGE_ACCOUNT=\"$storageAccountName\"' | sudo tee -a /etc/environment;
-    echo 'export AZURE_STORAGE_KEY=\"$storageKey\"' | sudo tee -a /etc/environment;
     sudo mv azcopy_linux_amd64_10.23.0/azcopy /usr/bin/; \
     rm -r azcopy_linux_amd64_*; \
     sudo apt update; \
