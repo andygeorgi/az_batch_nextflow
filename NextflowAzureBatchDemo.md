@@ -54,8 +54,6 @@ storageContainerName="nfdemocontainer"
 # must be unique within the region
 batchAccountName="banextflowdemo"
 
-servicePrincipalName="SPnfdemo"
-
 # Nextflow headnode parameters
 vmNFHeadnodeName="vm-nf-headnode"
 vmNFHeadnodeImage="Ubuntu2204"
